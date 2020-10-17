@@ -86,18 +86,18 @@ const App = {
     homeBtn.href = "#";
     homeBtn.innerText = "Home";
     mainNav.appendChild(homeBtn);
-    const booksBtn = document.createElement("a");
-    booksBtn.href = "#books";
-    booksBtn.innerText = "Books";
-    mainNav.appendChild(booksBtn);
-    const signupBtn = document.createElement("a");
-    signupBtn.href = "#signup";
-    signupBtn.innerText = "Sign Up";
-    mainNav.appendChild(signupBtn);
-    const signinBtn = document.createElement("a");
-    signinBtn.href = "#signin";
-    signinBtn.innerText = "Sign In";
-    mainNav.appendChild(signinBtn);
+    const workBtn = document.createElement("a");
+    workBtn.href = "#work";
+    workBtn.innerText = "Work";
+    mainNav.appendChild(workBtn);
+    const aboutBtn = document.createElement("a");
+    aboutBtn.href = "#about";
+    aboutBtn.innerText = "About";
+    mainNav.appendChild(aboutBtn);
+    const contactBtn = document.createElement("a");
+    contactBtn.href = "#contact";
+    contactBtn.innerText = "Contact";
+    mainNav.appendChild(contactBtn);
     /*
     if (Auth.authenticated === true) {
       const favsBtn = document.createElement("a");
