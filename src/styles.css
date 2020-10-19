@@ -8,10 +8,14 @@ body {
   padding: 0;
   margin: 0;
   min-height: 100%;
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
 
   color: #333;
   scroll-behavior: smooth;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
 }
 
 h1,
@@ -20,6 +24,7 @@ h3,
 h4,
 h5 {
   margin-top: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 button:focus {
@@ -33,16 +38,28 @@ button:focus {
   grid-template-rows: 80px 1fr;
 }
 
+.waves-div {
+  height: 50vh;
+  grid-row: 2;
+  width: 100%;
+  grid-column: 1;
+  z-index: 2;
+  margin: auto;
+  margin-bottom: 0;
+}
+
 .landing-section {
   width: 100%;
   background-image: url(./images/landing_hero_background_1.png);
   height: 100%;
-  grid-row: span 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
   display: grid;
   grid-template-rows: 80px 1fr;
   grid-template-columns: 1fr 1fr;
   background-size: cover;
   z-index: 2;
+  grid-column: 1;
 }
 
 .landing-column_1 {
@@ -97,7 +114,7 @@ button:focus {
   /* display: flex; */
   /* height: 50%; */
   margin-left: 20px;
-  margin-bottom: 20px;c
+  margin-bottom: 20px;
 }
 
 .hero-container {
@@ -107,8 +124,9 @@ button:focus {
 }
 
 .hero-title {
-  font-size: calc(30px + 10 * ((100vw) / 680));
+  font-size: calc(30px + 9 * ((100vw) / 680));
   color: white;
+  font-weight: 600;
 }
 
 .bio-section {
@@ -176,6 +194,7 @@ button:focus {
   padding: 0.4em 1em;
   color: rgb(255, 255, 255);
   padding: 1em 2.5vw;
+  font-size: 15px;
 }
 
 #main-nav a.active {
@@ -189,6 +208,12 @@ button:focus {
 #logo {
   margin: auto;
   margin-left: 5vw;
+  width: 180px;
+  transition: all ease 0.3s;
+}
+
+#logo:hover {
+  transform: scale(1.05);
 }
 
 .nav-logo {
@@ -411,6 +436,7 @@ button:focus {
   font-size: 1em;
   transition: all 0.2s ease;
   cursor: pointer;
+  font-family: "Montserrat", sans-serif;
 }
 
 .button:hover {

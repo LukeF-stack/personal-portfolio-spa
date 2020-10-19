@@ -85,9 +85,11 @@ const App = {
     let logo = document.querySelector("#logo");
     const logoBtn = document.createElement("a");
     logoBtn.href = "#";
-    logoBtn.innerText = "LUKE FORDHAM";
     logoBtn.classList.add("nav-logo", "subtle-shadow");
     logo.appendChild(logoBtn);
+    const logoImg = document.createElement("img");
+    logoImg.src = "/images/logo.svg";
+    logoBtn.appendChild(logoImg);
     const homeBtn = document.createElement("a");
     homeBtn.href = "#";
     homeBtn.innerText = "Home";
