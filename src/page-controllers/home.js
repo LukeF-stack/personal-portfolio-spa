@@ -5,7 +5,8 @@ import { App } from "./../components/App.js";
 function homePageController() {
   // alert("this is the home page");
   let data = {
-    intro: "I create meaningful, digital experiences"
+    intro: "I create meaningful, digital experiences",
+    project_title: "Car Rental SPA"
     //secondaryContent: "This is secondary content."
   };
   //console.log("homepage");
