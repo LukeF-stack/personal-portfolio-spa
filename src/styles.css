@@ -22,23 +22,62 @@ h5 {
   margin-top: 0;
 }
 
-.homepage-section {
+.page-home {
+  display: grid;
+  grid-template-rows: 60px 1fr;
+}
+
+.landing-section {
   width: 100%;
-  background-image: url("./images/landing_hero_background.png");
+  background-image: url(./images/landing_hero_background_1.png);
+  height: 100%;
+  grid-row: span 2;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 1fr;
+  background-size: cover;
+}
+
+.hero-container {
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px calc(100vh - 60px) 100vh 100vh 100vh;
+  display: grid;
+}
+
+.bio-section {
+  width: 100%;
+  background-image: url(./images/landing_hero_background_2.png);
+  height: 100%;
+  grid-row: 3;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 1fr;
+  background-size: cover;
+  background-position: center;
 }
 
 .page-header {
   display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
 }
 
 .page-header #main-nav {
-  flex-grow: 1;
+  width: fit-content;
+  display: flex;
 }
 
 .page-content {
   transition: all 0.3s ease;
   position: relative;
-  top: 0;
+  /* top: 0; */
+  grid-row: span 2;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px calc(100vh - 60px) 100vh 100vh 100vh;
 }
 
 .page-content.hidden {
@@ -61,8 +100,7 @@ h5 {
 
 /* main nav */
 #main-nav {
-  margin-bottom: 2em;
-  padding: 2em;
+  margin: 15px 5vw 15px 0;
 }
 
 #main-nav a {

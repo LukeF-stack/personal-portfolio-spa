@@ -19,15 +19,20 @@
 
     <!-- Homepage Template-->
     <script type="text/template" id="template-page-home">
-      <section class=" page page-home homepage-section">
+      <div class="page page-home">
           <header class="page-header">
               <nav id="main-nav"></nav>
           </header>
           <main class="page-content">
-                <h1>Home</h1>
-                <p>{{intro}}</p>
+            <div class="hero-container">
+              <section class="landing-section">
+                  <h1>Home</h1>
+                  <p>{{intro}}</p>
+              </section>
+              <section class="bio-section"></section>
+            </div>
           </main>
-        </section>
+        </div>
     </script>
     <!-- Work page Template-->
     <script type="text/template" id="template-page-work">

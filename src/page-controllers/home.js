@@ -10,7 +10,7 @@ function homePageController() {
   };
   //console.log("homepage");
   App.loadPage("home", "template-page-home", data, () => {
-    console.log("home");
+    //console.log("home");
   });
 }
 export { homePageController };
