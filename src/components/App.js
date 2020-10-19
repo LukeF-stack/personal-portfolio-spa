@@ -86,7 +86,7 @@ const App = {
     const logoBtn = document.createElement("a");
     logoBtn.href = "#";
     logoBtn.innerText = "LUKE FORDHAM";
-    logoBtn.classList.add("nav-logo");
+    logoBtn.classList.add("nav-logo", "subtle-shadow");
     logo.appendChild(logoBtn);
     const homeBtn = document.createElement("a");
     homeBtn.href = "#";

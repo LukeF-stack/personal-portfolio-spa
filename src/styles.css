@@ -22,6 +22,12 @@ h5 {
   margin-top: 0;
 }
 
+button:focus {
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+
 .page-home {
   display: grid;
   grid-template-rows: 80px 1fr;
@@ -42,10 +48,41 @@ h5 {
   grid-column: 1;
 }
 
+.landing-text-wrapper {
+  margin: auto;
+  grid-row: 2;
+  width: 80%;
+  padding-left: 15vw;
+  padding-bottom: 15vh;
+}
+
+.landing-text-wrapper button {
+  margin: 20px auto auto 0;
+  background: #ff7a45;
+  padding: 0.8em 1em;
+  box-shadow: 2px 4px 10px 3px rgba(0, 0, 0, 0.08);
+}
+
+.landing-text-wrapper button:hover {
+  transform: translateX(20px);
+
+  background-color: #e27b52;
+}
+
+.landing-text-wrapper p {
+  padding-left: 5px;
+  color: white;
+}
+
 .hero-container {
   grid-template-columns: 1fr;
   grid-template-rows: 80px calc(100vh - 80px) 100vh 100vh 100vh;
   display: grid;
+}
+
+.hero-title {
+  font-size: calc(30px + 10 * ((100vw) / 680));
+  color: white;
 }
 
 .bio-section {
@@ -111,15 +148,16 @@ h5 {
 #main-nav a {
   text-decoration: none;
   padding: 0.4em 1em;
-  color: #333;
+  color: rgb(255, 255, 255);
   padding: 1em 2.5vw;
 }
 
 #main-nav a.active {
   font-weight: bold;
-  background: #333;
+  background: #70ccd6;
   color: #fff;
   border-radius: 4px;
+  box-shadow: 1px 2px 3px #1f1f1f1c;
 }
 
 #logo {
@@ -133,6 +171,9 @@ h5 {
   font-weight: 600;
   font-size: 25px;
   margin: auto;
+}
+
+.subtle-shadow {
   text-shadow: 0px 1px 8px rgba(150, 150, 150, 0.34);
 }
 
