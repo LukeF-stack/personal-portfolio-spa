@@ -39,7 +39,7 @@ button:focus {
 }
 
 .waves-div {
-  height: 50vh;
+  height: 42vh;
   grid-row: 2;
   width: 100%;
   grid-column: 1;
@@ -50,7 +50,7 @@ button:focus {
 
 .landing-section {
   width: 100%;
-  background-image: url(./images/landing_hero_background_1.png);
+  background-image: url(./images/landing_hero_background_4.png);
   height: 100%;
   grid-row-start: 1;
   grid-row-end: 3;
@@ -131,7 +131,7 @@ button:focus {
 
 .bio-section {
   width: 100%;
-  background-image: url(./images/landing_hero_background_2.png);
+  background-image: url(./images/landing_hero_background_3.png);
   height: 100%;
   grid-row: 3;
   display: grid;
