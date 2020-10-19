@@ -82,6 +82,12 @@ const App = {
   loadNav: () => {
     // get main nav div
     let mainNav = document.querySelector("#main-nav");
+    let logo = document.querySelector("#logo");
+    const logoBtn = document.createElement("a");
+    logoBtn.href = "#";
+    logoBtn.innerText = "LUKE FORDHAM";
+    logoBtn.classList.add("nav-logo");
+    logo.appendChild(logoBtn);
     const homeBtn = document.createElement("a");
     homeBtn.href = "#";
     homeBtn.innerText = "Home";

@@ -5,7 +5,7 @@ import { App } from "./../components/App.js";
 function homePageController() {
   // alert("this is the home page");
   let data = {
-    intro: "Welcome to the homepage."
+    intro: "I create meaningful, digital experiences"
     //secondaryContent: "This is secondary content."
   };
   //console.log("homepage");
