@@ -7,7 +7,8 @@ function homePageController() {
   // alert("this is the home page");
   let data = {
     intro: "I create meaningful, digital experiences",
-    project_title: "Car Rental SPA"
+    project_title: "Car Rental Web Application",
+    project_subtitle: "Full-Stack, Vanilla JS Single Page Application"
     //secondaryContent: "This is secondary content."
   };
   //console.log("homepage");

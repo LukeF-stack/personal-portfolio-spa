@@ -16,6 +16,11 @@ body {
 
 a {
   font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+
+  color: rgb(255, 255, 255);
+
+  font-size: 12px;
 }
 
 h1,
@@ -25,6 +30,7 @@ h4,
 h5 {
   margin-top: 0;
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 button:focus {
@@ -72,12 +78,24 @@ button:focus {
   width: 100%;
   grid-row: 2;
   display: grid;
-  grid-template-rows: 3fr 2fr;
 }
 
 .landing-column_2 h5 {
   margin-left: 20px;
   height: 1em;
+}
+
+.landing-column_2 h2 {
+  color: white;
+  /* text-align: center; */
+  margin: 20px auto;
+}
+
+.column_2-container {
+  margin: auto;
+  margin-left: 0;
+  width: 60%;
+  padding-bottom: 12vh;
 }
 
 .landing-text-wrapper {
@@ -107,14 +125,22 @@ button:focus {
   margin: 30px 0 30px 0;
 }
 
-.hero-project-img {
-  width: 50%;
+.subtitle-small {
+  font-size: 12px;
+  color: white;
+  /* text-align: center; */
+}
+
+.hero-project-text {
+  display: block;
+  width: fit-content;
   margin: auto;
-  /* justify-content: end; */
-  /* display: flex; */
-  /* height: 50%; */
-  margin-left: 20px;
-  margin-bottom: 20px;
+}
+
+.hero-project-img {
+  width: 80%;
+  margin: auto;
+  display: flex;
 }
 
 .hero-container {
@@ -199,10 +225,10 @@ button:focus {
 
 #main-nav a.active {
   font-weight: bold;
-  background: #70ccd6;
+  /* background: #70ccd6; */
   color: #fff;
   border-radius: 4px;
-  box-shadow: 1px 2px 3px #1f1f1f1c;
+  /* box-shadow: 1px 2px 3px #1f1f1f1c; */
 }
 
 #logo {
