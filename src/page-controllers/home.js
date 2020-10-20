@@ -49,8 +49,6 @@ function homePageController() {
     data.project_img = project.img;
     data.project_icons = project.icons;
 
-    document.querySelector(".project-description-icons").innerHTML = null;
-
     //console.log(data.project_icons);
 
     anime({
@@ -59,6 +57,7 @@ function homePageController() {
       opacity: 0,
       duration: 1000,
       complete: () => {
+        document.querySelector(".project-description-icons").innerHTML = null;
         document.querySelector("#hero-project-title").innerHTML =
           data.project_title;
         document.querySelector("#hero-project-subtitle").innerHTML =

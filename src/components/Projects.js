@@ -13,7 +13,11 @@ const Projects = [
     title: "Japan Snow-Travel React Web Application",
     img: "/images/project_japan-snow.png",
     subtitle: "Full-Stack, React JS Single Page Application",
-    icons: null
+    icons: [
+      { src: "/images/react-icon.svg" },
+      { src: "/images/nodejs-icon.svg" },
+      { src: "/images/mongodb-icon.svg" }
+    ]
   }
 ];
 

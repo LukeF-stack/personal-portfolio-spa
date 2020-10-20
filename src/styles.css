@@ -197,7 +197,7 @@ button:focus {
 
 .hero-project-text {
   display: block;
-  width: fit-content;
+  width: 76%;
   margin: auto;
 }
 
