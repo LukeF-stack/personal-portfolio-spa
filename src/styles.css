@@ -44,6 +44,16 @@ button:focus {
   grid-template-rows: 80px 1fr;
 }
 
+.next-btn {
+  font-size: 40px;
+  color: white;
+  margin: auto;
+  margin-left: 0;
+  grid-row: 1;
+  padding-bottom: 23vh;
+  cursor: pointer;
+}
+
 .socials {
   position: fixed;
   top: 30vh;
@@ -76,7 +86,7 @@ button:focus {
 }
 
 .waves-div {
-  height: 60vh;
+  height: 55vh;
   grid-row: 2;
   width: 100%;
   grid-column: 1;
@@ -109,6 +119,8 @@ button:focus {
   width: 100%;
   grid-row: 2;
   display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
 }
 
 .landing-column_2 h5 {
@@ -125,8 +137,10 @@ button:focus {
 .column_2-container {
   margin: auto;
   margin-left: 0;
-  width: 60%;
+  margin-right: 0;
+  width: 100%;
   padding-bottom: 12vh;
+  grid-row: 1;
 }
 
 .landing-text-wrapper {
@@ -170,6 +184,11 @@ button:focus {
 
 .hero-project-text a {
   font-size: 12px;
+  transition: all ease 0.3s;
+}
+
+.hero-project-text a:hover {
+  padding-left: 15px;
 }
 
 .hero-project-img {
