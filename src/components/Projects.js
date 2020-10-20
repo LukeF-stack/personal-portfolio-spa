@@ -10,9 +10,9 @@ const Projects = [
     ]
   },
   {
-    title: "Other Project",
-    img: "/images/project_placeholder.png",
-    subtitle: "This is the other project that will go here",
+    title: "Japan Snow-Travel React Web Application",
+    img: "/images/project_japan-snow.png",
+    subtitle: "Full-Stack, React JS Single Page Application",
     icons: null
   }
 ];

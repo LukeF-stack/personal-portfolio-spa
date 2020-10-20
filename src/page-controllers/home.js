@@ -27,8 +27,6 @@ function homePageController() {
       let i = 0;
       let project = Projects[i];
       project["index"] = i;
-      //console.log("project object is", project);
-      //console.log(project);
       setProject(project);
       nextBtn.addEventListener("click", () => {
         if (i < Projects.length - 1) {
