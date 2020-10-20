@@ -20,7 +20,7 @@ function homePageController() {
     Waves.init();
 
     const nextBtn = document.createElement("h1");
-    nextBtn.innerHTML = "&#10140;";
+    nextBtn.innerHTML = "&#x276F;";
     nextBtn.classList.add("next-btn", "subtle-shadow");
     document.querySelector(".landing-column_2").appendChild(nextBtn);
     for (let index = 0; index < Projects.length; index++) {

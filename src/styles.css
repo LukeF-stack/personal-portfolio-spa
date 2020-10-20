@@ -59,9 +59,14 @@ button:focus {
   color: white;
   margin: auto;
   margin-left: 0;
+  margin-bottom: 56vh;
   grid-row: 1;
-  padding-bottom: 23vh;
   cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.next-btn:hover {
+  padding-left: 20px;
 }
 
 .socials {
