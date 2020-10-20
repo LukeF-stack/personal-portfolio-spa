@@ -10,7 +10,8 @@ function homePageController() {
     intro: "I create meaningful, digital experiences",
     project_title: null,
     project_subtitle: null,
-    project_img: null
+    project_img: null,
+    project_icons: null
     //secondaryContent: "This is secondary content."
   };
   //console.log("homepage");
@@ -26,6 +27,7 @@ function homePageController() {
       let i = 0;
       let project = Projects[i];
       project["index"] = i;
+      //console.log("project object is", project);
       //console.log(project);
       setProject(project);
       nextBtn.addEventListener("click", () => {
@@ -47,10 +49,15 @@ function homePageController() {
     data.project_title = project.title;
     data.project_subtitle = project.subtitle;
     data.project_img = project.img;
+    data.project_icons = project.icons;
+
+    document.querySelector(".project-description-icons").innerHTML = null;
+
+    //console.log(data.project_icons);
 
     anime({
       targets:
-        "#hero-project-title, #hero-project-subtitle, .hero-project-img, .view-project-btn",
+        "#hero-project-title, #hero-project-subtitle, .hero-project-img, .view-project-btn, .project-description-icons",
       opacity: 0,
       duration: 1000,
       complete: () => {
@@ -59,6 +66,16 @@ function homePageController() {
         document.querySelector("#hero-project-subtitle").innerHTML =
           data.project_subtitle;
         document.querySelector(".hero-project-img").src = data.project_img;
+        if (data.project_icons !== null) {
+          data.project_icons.forEach((icon) => {
+            const iconImg = document.createElement("img");
+            iconImg.classList.add("technologies-icon");
+            iconImg.src = icon.src;
+            document
+              .querySelector(".project-description-icons")
+              .appendChild(iconImg);
+          });
+        }
         //console.log("complete");
         showProject();
       }
@@ -68,7 +85,7 @@ function homePageController() {
   function showProject() {
     anime({
       targets:
-        "#hero-project-title, #hero-project-subtitle, .hero-project-img, .view-project-btn",
+        "#hero-project-title, #hero-project-subtitle, .hero-project-img, .view-project-btn, .project-description-icons",
       opacity: 1,
       duration: 1000
       // complete: () => {

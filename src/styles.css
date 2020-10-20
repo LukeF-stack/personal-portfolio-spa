@@ -201,6 +201,18 @@ button:focus {
   transition: all ease 0.3s;
 }
 
+.technologies-icon {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+.project-description-icons {
+  width: 100px;
+  display: flex;
+  padding: 15px 0;
+}
+
 .hero-project-text a:hover {
   padding-left: 15px;
 }
@@ -285,9 +297,8 @@ button:focus {
 
 #main-nav a {
   text-decoration: none;
-  padding: 0.4em 1em;
   color: rgb(255, 255, 255);
-  padding: 1em 2.5vw;
+  margin: 1em 2.5vw;
   font-size: 15px;
 }
 
