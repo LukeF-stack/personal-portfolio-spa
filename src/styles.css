@@ -39,6 +39,16 @@ button:focus {
   outline: none;
 }
 
+/* .hidden {
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+.visible {
+  opacity: 1;
+  transition: all ease 0.5s;
+} */
+
 .page-home {
   display: grid;
   grid-template-rows: 80px 1fr;
