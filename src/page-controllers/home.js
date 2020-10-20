@@ -48,11 +48,38 @@ function homePageController() {
     data.project_subtitle = project.subtitle;
     data.project_img = project.img;
 
-    document.querySelector("#hero-project-title").innerHTML =
-      data.project_title;
-    document.querySelector("#hero-project-subtitle").innerHTML =
-      data.project_subtitle;
-    document.querySelector(".hero-project-img").src = data.project_img;
+    anime({
+      targets:
+        "#hero-project-title, #hero-project-subtitle, .hero-project-img, .view-project-btn",
+      opacity: 0,
+      duration: 1000,
+      complete: () => {
+        document.querySelector("#hero-project-title").innerHTML =
+          data.project_title;
+        document.querySelector("#hero-project-subtitle").innerHTML =
+          data.project_subtitle;
+        document.querySelector(".hero-project-img").src = data.project_img;
+        //console.log("complete");
+        showProject();
+      }
+    });
+  }
+
+  function showProject() {
+    anime({
+      targets:
+        "#hero-project-title, #hero-project-subtitle, .hero-project-img, .view-project-btn",
+      opacity: 1,
+      duration: 1000
+      // complete: () => {
+      //   document.querySelector("#hero-project-title").innerHTML =
+      //     data.project_title;
+      //   document.querySelector("#hero-project-subtitle").innerHTML =
+      //     data.project_subtitle;
+      //   document.querySelector(".hero-project-img").src = data.project_img;
+      //   console.log("complete");
+      // }
+    });
   }
 }
 export { homePageController };
