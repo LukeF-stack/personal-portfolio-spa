@@ -18,6 +18,16 @@ const Projects = [
       { src: "/images/nodejs-icon.svg" },
       { src: "/images/mongodb-icon.svg" }
     ]
+  },
+  {
+    title: "Ducati Motorcycles Concept Website",
+    img: "/images/project_ducati-website.png",
+    subtitle: "Static HTML, CSS & jQuery Website",
+    icons: [
+      { src: "/images/html-icon.svg" },
+      { src: "/images/css-icon.svg" },
+      { src: "/images/jquery-icon.svg" }
+    ]
   }
 ];
 

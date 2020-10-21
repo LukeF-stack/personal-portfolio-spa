@@ -20,13 +20,15 @@ function homePageController() {
     Waves.init();
 
     const nextBtn = document.createElement("h1");
-    nextBtn.innerHTML = "&#x276F;";
+    nextBtn.innerHTML = "&#10140;";
     nextBtn.classList.add("next-btn", "subtle-shadow");
     document.querySelector(".landing-column_2").appendChild(nextBtn);
     for (let index = 0; index < Projects.length; index++) {
       let i = 0;
       let project = Projects[i];
       project["index"] = i;
+      //console.log("project object is", project);
+      //console.log(project);
       setProject(project);
       nextBtn.addEventListener("click", () => {
         if (i < Projects.length - 1) {
@@ -49,6 +51,8 @@ function homePageController() {
     data.project_img = project.img;
     data.project_icons = project.icons;
 
+    document.querySelector(".project-description-icons").innerHTML = null;
+
     //console.log(data.project_icons);
 
     anime({
@@ -57,7 +61,6 @@ function homePageController() {
       opacity: 0,
       duration: 1000,
       complete: () => {
-        document.querySelector(".project-description-icons").innerHTML = null;
         document.querySelector("#hero-project-title").innerHTML =
           data.project_title;
         document.querySelector("#hero-project-subtitle").innerHTML =
