@@ -72,6 +72,7 @@ const App = {
       App.rootEl.classList.remove("hidden");
       App.loadNav();
       App.refreshNav();
+      App.loadFooter();
       // run callback
       if (typeof callback === "function") {
         callback();
@@ -163,6 +164,60 @@ const App = {
         navLink.classList.add("active");
       }
     });
+  },
+
+  loadFooter: () => {
+    const footer = document.querySelector("footer");
+    const creditsDiv = document.createElement("div");
+    creditsDiv.classList.add("credits");
+    creditsDiv.innerHTML = "<p>&#xa9; &nbsp; 2020 • Luke Fordham</p>";
+    footer.appendChild(creditsDiv);
+
+    //socials
+
+    const socialsDiv = document.createElement("div");
+    socialsDiv.classList.add("socials-footer");
+    footer.appendChild(socialsDiv);
+
+    const linkedinBtn = document.createElement("a");
+    linkedinBtn.classList.add("social-btn", "social-dark");
+    linkedinBtn.href = "https://www.linkedin.com/in/luke-fordham-5411451b5/";
+    socialsDiv.appendChild(linkedinBtn);
+    const linkedinIcon = document.createElement("img");
+    linkedinIcon.src = "/images/linkedin-icon.svg";
+    linkedinBtn.appendChild(linkedinIcon);
+
+    const behanceBtn = document.createElement("a");
+    behanceBtn.classList.add("social-btn", "social-dark");
+    behanceBtn.href = "https://www.behance.com";
+    socialsDiv.appendChild(behanceBtn);
+    const behanceIcon = document.createElement("img");
+    behanceIcon.src = "/images/behance-icon.svg";
+    behanceBtn.appendChild(behanceIcon);
+
+    const dribbbleBtn = document.createElement("a");
+    dribbbleBtn.classList.add("social-btn", "social-dark");
+    dribbbleBtn.href = "https://www.dribbble.com";
+    socialsDiv.appendChild(dribbbleBtn);
+    const dribbbleIcon = document.createElement("img");
+    dribbbleIcon.src = "/images/dribbble-icon.svg";
+    dribbbleBtn.appendChild(dribbbleIcon);
+
+    const igBtn = document.createElement("a");
+    igBtn.classList.add("social-btn", "social-dark");
+    igBtn.href = "https://www.instagram.com";
+    socialsDiv.appendChild(igBtn);
+    const igIcon = document.createElement("img");
+    igIcon.src = "/images/ig-icon.svg";
+    igBtn.appendChild(igIcon);
+
+    const twitterBtn = document.createElement("a");
+    twitterBtn.classList.add("social-btn", "social-dark");
+    twitterBtn.href = "https://www.twitter.com";
+    socialsDiv.appendChild(twitterBtn);
+    const twitterIcon = document.createElement("img");
+    twitterIcon.src = "/images/twitter-icon.svg";
+    twitterBtn.appendChild(twitterIcon);
   }
 };
 
