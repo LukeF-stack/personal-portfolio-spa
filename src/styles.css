@@ -163,8 +163,15 @@ button:focus {
   background-image: url(./images/landing_hero_background_4.png);
 }
 
-.project-landing-background {
+.car-rental-landing-background {
   background-image: url(./images/car_rental_hero.png);
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+}
+
+.powder-japan-landing-background {
+  background-image: url(./images/japan_powder_hero.png);
   width: 100%;
   background-size: cover;
   height: 100%;
