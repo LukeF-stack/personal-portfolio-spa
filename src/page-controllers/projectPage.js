@@ -5,7 +5,7 @@ function projectPageController() {
   const projectId = window.location.hash.split("#")[1];
 
   const currentProject = Projects.find(function (item) {
-    return item.id == projectId;
+    return item.id === projectId;
   });
 
   //console.log("homepage");
@@ -14,7 +14,15 @@ function projectPageController() {
     `template-page-${currentProject.id}`,
     currentProject,
     () => {
-      console.log("about");
+      //console.log("about");
+      const iconDiv = document.querySelector(".project-description-icons");
+
+      const iconObjs = currentProject.icons.forEach((icon) => {
+        const iconImg = document.createElement("img");
+        iconImg.src = icon.src;
+        //console.log(iconImg);
+        iconDiv.appendChild(iconImg);
+      });
     }
   );
 }
