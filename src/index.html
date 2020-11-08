@@ -29,10 +29,10 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 128.656L107 168.388C213 208.12 427 287.585 640 247.852C853 208.12 1067 50.561 1280 10.8287C1493 -28.9036 1707 50.561 1813 90.2933L1920 128.656V602.703H1813C1759.69 602.703 1674.07 602.703 1580 602.703C1487.01 602.703 1385.88 602.703 1280 602.703C1067 602.703 853 602.703 640 602.703C427 602.703 213 602.703 107 602.703H0V128.656Z" fill="black" fill-opacity="0.3"/>
                     </svg>
               </div>
-              <section class="landing-section">
+              <section class="landing-section home">
                 <div class="landing-text-wrapper landing-column_1">
                     <h1 class="hero-title subtle-shadow">Web Developer & Designer</h1>
-                    <p class="subtle-shadow">{{intro}}</p>
+                    <p class="subtle-shadow subtitle">{{intro}}</p>
                     <a href="#work">
                       <button href="#work" class="button">My work &nbsp; &#x276F;	</button>
                     </a>
@@ -44,7 +44,7 @@
                           <h2 id="hero-project-title" class="subtle-shadow"></h2>
                           <p id="hero-project-subtitle" class="subtitle-small"></p>
                           <div class="project-description-icons"></div>
-                          <a href="#work/{{project_name}}" class="view-project-btn">VIEW PROJECT &nbsp; &#x276F;</a>
+                          <a class="view-project-btn">VIEW PROJECT &nbsp; &#x276F;</a>
                       </div>
                   </div>
                 </div>
@@ -64,6 +64,27 @@
           <main class="page-content">
               <h1>Work</h1>
               <p>{{intro}}</p>
+          </main>
+      </div>
+    </script>
+    <!-- Car Rental page Template-->
+    <script type="text/template" id="template-page-car-rental">
+      <div class="page page-home">
+          <header class="page-header">
+              <div id="logo"></div>
+              <nav id="main-nav"></nav>
+          </header>
+          <main class="page-content">
+            <section class="landing-section car-rental">
+              <div class="project-title-container">
+                <h1 class="hero-title subtle-shadow">{{title}}</h1>
+                <p class="subtitle">{{subtitle}}</p>
+              </div>
+                <div class="landing-blur">
+              <section class="project-landing-background">
+              </section>
+            </div>
+            </section>
           </main>
       </div>
     </script>

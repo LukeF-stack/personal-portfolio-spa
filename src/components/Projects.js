@@ -1,6 +1,8 @@
 const Projects = [
   {
     title: "Car Rental Web Application",
+    id: "car-rental",
+    cover_img: "/images/car_rental_cover.png",
     img: "/images/project_car-rental-spa.png",
     subtitle: "Full-Stack, Vanilla JS Single Page Application",
     icons: [
@@ -10,7 +12,8 @@ const Projects = [
     ]
   },
   {
-    title: "Japan Snow-Travel React Web Application",
+    title: "Powder Japan - React Web Application",
+    id: "powder-japan",
     img: "/images/project_japan-snow.png",
     subtitle: "Full-Stack, React JS Single Page Application",
     icons: [
@@ -20,7 +23,8 @@ const Projects = [
     ]
   },
   {
-    title: "Ducati Motorcycles Concept Website",
+    title: "Ducati Motorcycles - Concept Website",
+    id: "ducati-motorcycles",
     img: "/images/project_ducati-website.png",
     subtitle: "Static HTML, CSS & jQuery Website",
     icons: [

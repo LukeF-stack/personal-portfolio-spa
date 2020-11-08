@@ -20,7 +20,7 @@ function homePageController() {
     Waves.init();
 
     const nextBtn = document.createElement("h1");
-    nextBtn.innerHTML = "&#10140;";
+    nextBtn.innerHTML = "❯";
     nextBtn.classList.add("next-btn", "subtle-shadow");
     document.querySelector(".landing-column_2").appendChild(nextBtn);
     for (let index = 0; index < Projects.length; index++) {
@@ -50,53 +50,78 @@ function homePageController() {
     data.project_subtitle = project.subtitle;
     data.project_img = project.img;
     data.project_icons = project.icons;
+    data.project_id = project.id;
 
     document.querySelector(".project-description-icons").innerHTML = null;
 
     //console.log(data.project_icons);
+    document.querySelector("#hero-project-title").innerHTML =
+      data.project_title;
+    document.querySelector("#hero-project-subtitle").innerHTML =
+      data.project_subtitle;
+    document.querySelector(".hero-project-img").src = data.project_img;
+    if (data.project_icons !== null) {
+      data.project_icons.forEach((icon) => {
+        const iconImg = document.createElement("img");
+        iconImg.classList.add("technologies-icon");
+        iconImg.src = icon.src;
+        document
+          .querySelector(".project-description-icons")
+          .appendChild(iconImg);
+      });
+    }
 
-    anime({
-      targets:
-        "#hero-project-title, #hero-project-subtitle, .hero-project-img, .view-project-btn, .project-description-icons",
-      opacity: 0,
-      duration: 1000,
-      complete: () => {
-        document.querySelector("#hero-project-title").innerHTML =
-          data.project_title;
-        document.querySelector("#hero-project-subtitle").innerHTML =
-          data.project_subtitle;
-        document.querySelector(".hero-project-img").src = data.project_img;
-        if (data.project_icons !== null) {
-          data.project_icons.forEach((icon) => {
-            const iconImg = document.createElement("img");
-            iconImg.classList.add("technologies-icon");
-            iconImg.src = icon.src;
-            document
-              .querySelector(".project-description-icons")
-              .appendChild(iconImg);
-          });
-        }
-        //console.log("complete");
-        showProject();
-      }
-    });
+    const viewProjectBtn = document.querySelector(".view-project-btn");
+    viewProjectBtn.href = `#${data.project_id}`;
+
+    // document.querySelector("#hero-project-title").innerHTML =
+    //   data.project_title;
+    // document.querySelector("#hero-project-subtitle").innerHTML =
+    //   data.project_subtitle;
+    // document.querySelector(".hero-project-img").src = data.project_img;
+    // console.log("complete");
+    // anime({
+    //   targets:
+    //     "#hero-project-title, #hero-project-subtitle, .hero-project-img, .view-project-btn, .project-description-icons",
+    //   opacity: 0,
+    //   duration: 1000,
+    //   complete: () => {
+    //     document.querySelector("#hero-project-title").innerHTML =
+    //       data.project_title;
+    //     document.querySelector("#hero-project-subtitle").innerHTML =
+    //       data.project_subtitle;
+    //     document.querySelector(".hero-project-img").src = data.project_img;
+    //     if (data.project_icons !== null) {
+    //       data.project_icons.forEach((icon) => {
+    //         const iconImg = document.createElement("img");
+    //         iconImg.classList.add("technologies-icon");
+    //         iconImg.src = icon.src;
+    //         document
+    //           .querySelector(".project-description-icons")
+    //           .appendChild(iconImg);
+    //       });
+    //     }
+    //     //console.log("complete");
+    //     showProject();
+    //   }
+    // });
   }
 
-  function showProject() {
-    anime({
-      targets:
-        "#hero-project-title, #hero-project-subtitle, .hero-project-img, .view-project-btn, .project-description-icons",
-      opacity: 1,
-      duration: 1000
-      // complete: () => {
-      //   document.querySelector("#hero-project-title").innerHTML =
-      //     data.project_title;
-      //   document.querySelector("#hero-project-subtitle").innerHTML =
-      //     data.project_subtitle;
-      //   document.querySelector(".hero-project-img").src = data.project_img;
-      //   console.log("complete");
-      // }
-    });
-  }
+  // function showProject() {
+  //   anime({
+  //     targets:
+  //       "#hero-project-title, #hero-project-subtitle, .hero-project-img, .view-project-btn, .project-description-icons",
+  //     opacity: 1,
+  //     duration: 1000
+  //     complete: () => {
+  //       document.querySelector("#hero-project-title").innerHTML =
+  //         data.project_title;
+  //       document.querySelector("#hero-project-subtitle").innerHTML =
+  //         data.project_subtitle;
+  //       document.querySelector(".hero-project-img").src = data.project_img;
+  //       console.log("complete");
+  //     }
+  //   });
+  // }
 }
 export { homePageController };
