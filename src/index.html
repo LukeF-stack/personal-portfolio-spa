@@ -22,7 +22,7 @@
               <div id="logo"></div>
               <nav id="main-nav"></nav>
           </header>
-          <main class="page-content">
+          <main class="page-content page-content-home">
             <div class="hero-container">
               <div class="waves-div">
                   <svg class="waves" width="100vw" height="40vh"  fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,12 +74,13 @@
               <div id="logo"></div>
               <nav id="main-nav"></nav>
           </header>
-          <main class="page-content">
+          <main class="page-content page-content-project">
             <section class="landing-section car-rental">
               <div class="project-title-container">
                 <h1 class="hero-title">{{title}}</h1>
                 <p class="subtitle">{{subtitle}}</p>
                 <p class="bio ">{{description}}</p>
+                <a class="live-link" href="{{link.link}}">{{link.link_title}} &nbsp; ❯</a>
                 <div class="project-description-icons"></div>
               </div>
               <div class="display-img-container"><img src={{display_img}} alt=""></div>
@@ -87,6 +88,12 @@
               <section class="project-landing-background">
               </section>
             </div>
+            </section>
+            <section class="project-after-fold">
+              <div class="case-img-wrapper">
+                <div style="background-image: url('.{{case_img_1}}');" class="case-img"></div>
+                <div style="background-image: url('.{{case_img_2}}');" class="case-img"></div>
+              </div>
             </section>
           </main>
       </div>

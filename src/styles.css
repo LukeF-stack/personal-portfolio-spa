@@ -148,6 +148,26 @@ button:focus {
   padding: 0 0 20vh 0;
 }
 
+.project-after-fold {
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.case-img {
+  height: 80%;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  flex-grow: 2;
+}
+
+.case-img-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .dark-text {
   color: #333 !important;
 }
@@ -165,7 +185,7 @@ button:focus {
   z-index: 2;
   width: 90%;
   margin: auto -5px auto auto;
-  padding: 0 0 12vh 0;
+  padding: 0 0 10vh 0;
 }
 
 .display-img-container img {
@@ -241,6 +261,7 @@ button:focus {
   padding-left: 5px;
   color: white;
   margin: 30px 0 30px 0;
+  font-size: calc(18px + 9 * ((10vw) / 680));
 }
 
 .subtitle-small {
@@ -261,9 +282,19 @@ button:focus {
 }
 
 .technologies-icon {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   margin: auto;
+}
+
+.live-link {
+  transition: all ease 0.3s;
+  padding: 10px 0;
+  display: block;
+}
+
+.live-link:hover {
+  padding-left: 20px;
 }
 
 .project-description-icons {
@@ -297,7 +328,7 @@ button:focus {
 
 .bio-section {
   width: 100%;
-  background-image: url(./images/landing_hero_background_3.png);
+  /* background-image: url(./images/landing_hero_background_3.png); */
   height: 100%;
   grid-row: 3;
   display: grid;
@@ -329,7 +360,14 @@ button:focus {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.page-content-home {
   grid-template-rows: 80px calc(100vh - 80px) 100vh 100vh 100vh;
+}
+
+.page-content-project {
+  grid-template-rows: 80px calc(100vh - 80px) 100vh;
 }
 
 .page-content.hidden {
