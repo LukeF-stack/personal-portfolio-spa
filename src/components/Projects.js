@@ -26,6 +26,8 @@ const Projects = [
     img: "/images/project_japan-snow.png",
     display_img: "/images/powder_japan_display.png",
     subtitle: "Full-Stack, React JS Single Page Application",
+    case_img_1: "/images/powder_japan_case1.png",
+    case_img_2: "/images/powder_japan_case2.png",
     link: {
       link: "https://google.com",
       link_title: "See live website here"
