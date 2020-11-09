@@ -320,7 +320,7 @@ button:focus {
 }
 
 .subtitle-small {
-  font-size: 12px;
+  font-size: calc(12px + 9 * ((20vw) / 880));
   color: white;
   /* text-align: center; */
 }
