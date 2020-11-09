@@ -24,7 +24,14 @@ const Projects = [
     title: "Powder Japan - React Web Application",
     id: "powder-japan",
     img: "/images/project_japan-snow.png",
+    display_img: "/images/powder_japan_display.png",
     subtitle: "Full-Stack, React JS Single Page Application",
+    link: {
+      link: "https://google.com",
+      link_title: "See live website here"
+    },
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu risus dictum ut ut id porttitor vel aliquet. Magna viverra nunc egestas risus aliquam, volutpat sed ac, libero. Tincidunt proin pellentesque pretium enim, sollicitudin vulputate ultrices scelerisque facilisis. Purus sollicitudin elit malesuada porta facilisis egestas imperdiet. Mi lorem consectetur nibh velit. Facilisi sit massa sagittis, malesuada ornare feugiat donec. Gravida leo etiam tincidunt ultrices. Vulputate nisl, enim lorem arcu, nibh viverra varius. Morbi aliquam nulla tellus, arcu, mauris urna purus dapibus et. In lectus nec venenatis amet.",
     icons: [
       { src: "/images/react-icon.svg" },
       { src: "/images/nodejs-icon.svg" },
