@@ -100,10 +100,10 @@ const App = {
     workBtn.href = "#work";
     workBtn.innerText = "Work";
     mainNav.appendChild(workBtn);
-    const aboutBtn = document.createElement("a");
-    aboutBtn.href = "#about";
-    aboutBtn.innerText = "About";
-    mainNav.appendChild(aboutBtn);
+    // const aboutBtn = document.createElement("a");
+    // aboutBtn.href = "#about";
+    // aboutBtn.innerText = "About";
+    // mainNav.appendChild(aboutBtn);
     const contactBtn = document.createElement("a");
     contactBtn.href = "#contact";
     contactBtn.innerText = "Contact";
