@@ -23,7 +23,7 @@ const Projects = [
   {
     title: "Powder Japan - React Web Application",
     id: "powder-japan",
-    img: "/images/project_japan-snow.png",
+    img: "/images/project_powder_japan.png",
     display_img: "/images/powder_japan_display.png",
     subtitle: "Full-Stack, React JS Single Page Application",
     case_img_1: "/images/powder_japan_case1.png",
