@@ -74,54 +74,6 @@ function homePageController() {
     const viewProjectBtn = document.querySelector(".view-project-btn");
     viewProjectBtn.href = `#${data.project_id}`;
 
-    // document.querySelector("#hero-project-title").innerHTML =
-    //   data.project_title;
-    // document.querySelector("#hero-project-subtitle").innerHTML =
-    //   data.project_subtitle;
-    // document.querySelector(".hero-project-img").src = data.project_img;
-    // console.log("complete");
-    // anime({
-    //   targets:
-    //     "#hero-project-title, #hero-project-subtitle, .hero-project-img, .view-project-btn, .project-description-icons",
-    //   opacity: 0,
-    //   duration: 1000,
-    //   complete: () => {
-    //     document.querySelector("#hero-project-title").innerHTML =
-    //       data.project_title;
-    //     document.querySelector("#hero-project-subtitle").innerHTML =
-    //       data.project_subtitle;
-    //     document.querySelector(".hero-project-img").src = data.project_img;
-    //     if (data.project_icons !== null) {
-    //       data.project_icons.forEach((icon) => {
-    //         const iconImg = document.createElement("img");
-    //         iconImg.classList.add("technologies-icon");
-    //         iconImg.src = icon.src;
-    //         document
-    //           .querySelector(".project-description-icons")
-    //           .appendChild(iconImg);
-    //       });
-    //     }
-    //     //console.log("complete");
-    //     showProject();
-    //   }
-    // });
-  }
 
-  // function showProject() {
-  //   anime({
-  //     targets:
-  //       "#hero-project-title, #hero-project-subtitle, .hero-project-img, .view-project-btn, .project-description-icons",
-  //     opacity: 1,
-  //     duration: 1000
-  //     complete: () => {
-  //       document.querySelector("#hero-project-title").innerHTML =
-  //         data.project_title;
-  //       document.querySelector("#hero-project-subtitle").innerHTML =
-  //         data.project_subtitle;
-  //       document.querySelector(".hero-project-img").src = data.project_img;
-  //       console.log("complete");
-  //     }
-  //   });
-  // }
 }
 export { homePageController };
