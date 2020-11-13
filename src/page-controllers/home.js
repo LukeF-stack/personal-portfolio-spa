@@ -73,7 +73,6 @@ function homePageController() {
 
     const viewProjectBtn = document.querySelector(".view-project-btn");
     viewProjectBtn.href = `#${data.project_id}`;
-
-
+  }
 }
 export { homePageController };
