@@ -269,7 +269,7 @@ button:focus {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 4;
   transform: scale(1.1);
 }
 
@@ -800,5 +800,19 @@ button:focus {
     margin: auto;
     margin-top: 4em;
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .landing-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr 1fr;
+    height: fit-content;
+  }
+  .display-img-container {
+    grid-column: 1;
+    grid-row: 3;
+    /* padding: 10vmin; */
+    margin: auto;
   }
 }

@@ -29,7 +29,7 @@ const Projects = [
     case_img_1: "/images/powder_japan_case1.png",
     case_img_2: "/images/powder_japan_case2.png",
     link: {
-      link: "https://google.com",
+      link: "https://powder-japan.netlify.app/",
       link_title: "See live website here"
     },
     description:
