@@ -234,6 +234,7 @@ button:focus {
   background-size: cover;
   background-position: center;
   flex-grow: 2;
+  min-width: 500px;
 }
 
 .case-img-wrapper {
