@@ -69,6 +69,38 @@ button:focus {
   display: grid;
   grid-template-rows: 80px 1fr;
 }
+.page-work {
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(0deg, rgb(66, 196, 210), #67bbc6);
+}
+
+.work-project-card {
+  min-width: 60vmin;
+  flex-grow: 1;
+}
+
+.project-1 {
+  background-image: url("/images/powder_japan_display.png");
+}
+.project-2 {
+  background-image: url("/images/powder_japan_display.png");
+}
+.project-3 {
+  background-image: url("/images/powder_japan_display.png");
+}
+
+.work-grid {
+  flex-wrap: wrap;
+  display: flex;
+  grid-row: 2;
+  width: 70%;
+  height: 80%;
+  margin: auto;
+}
+
 .page-contact {
   display: grid;
   grid-template-rows: 80px calc(100vh - 160px);
@@ -234,7 +266,7 @@ button:focus {
   background-size: cover;
   background-position: center;
   flex-grow: 2;
-  min-width: 50vmax;
+  min-width: 60vmin;
 }
 
 .case-img-wrapper {
@@ -441,6 +473,7 @@ button:focus {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr;
 }
 
 .page-content-home {
