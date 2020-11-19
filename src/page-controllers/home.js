@@ -78,7 +78,7 @@ function homePageController() {
     viewProjectBtn.href = `#${data.project_id}`;
     setTimeout(() => {
       document.querySelector(".column_2-container").style.opacity = 1;
-    }, 500);
+    }, 800);
   }
 }
 export { homePageController };
