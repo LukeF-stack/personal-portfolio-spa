@@ -84,26 +84,55 @@ button:focus {
   margin: 5px;
   box-shadow: -3px 6px 18px 3px #00000045;
   transition: all ease 0.3s;
+  overflow: hidden;
+}
+
+.card-caption {
+  margin: auto;
+  display: block;
+  margin: auto;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.719);
+  transition: all ease 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+.card-caption h1 {
+  margin: auto;
 }
 
 .project-1 {
   background-image: url("/images/powder_japan_display.png");
 }
 .project-1:hover {
-  padding: 20px;
+  padding: 10px;
+}
+.project-1:hover .card-caption {
+  visibility: visible;
+  opacity: 1;
 }
 .project-2 {
   background-image: url("/images/car_rental_display.png");
   min-width: 40vmin;
 }
+.project-2:hover .card-caption {
+  visibility: visible;
+  opacity: 1;
+}
 .project-2:hover {
-  padding: 20px;
+  padding: 10px;
 }
 .project-3 {
   background-image: url("/images/ducati_project_card.png");
 }
 .project-3:hover {
-  padding: 20px;
+  padding: 10px;
+}
+.project-3:hover .card-caption {
+  visibility: visible;
+  opacity: 1;
 }
 
 .work-grid {
