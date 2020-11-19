@@ -856,4 +856,7 @@ button:focus {
   .socials {
     display: none;
   }
+  .bio {
+    font-size: 14px;
+  }
 }
