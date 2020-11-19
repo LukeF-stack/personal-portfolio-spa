@@ -85,6 +85,7 @@ button:focus {
   box-shadow: -3px 6px 18px 3px #00000045;
   transition: all ease 0.3s;
   overflow: hidden;
+  position: relative;
 }
 
 .card-caption {
@@ -98,6 +99,11 @@ button:focus {
   transition: all ease 0.3s;
   visibility: hidden;
   opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 .card-caption h1 {
   margin: auto;
