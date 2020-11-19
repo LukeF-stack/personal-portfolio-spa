@@ -495,11 +495,36 @@ button:focus {
 
   height: 100%;
   grid-row: 3;
-  display: grid;
-  grid-template-rows: 80px 1fr;
-  grid-template-columns: 1fr;
+  display: flex;
+  /* grid-template-rows: 80px 1fr;
+  grid-template-columns: 1fr; */
 
   background: linear-gradient(0deg, rgb(66, 196, 210), #67bbc6);
+}
+
+.about-bio {
+  margin: auto 0;
+  grid-row: 2;
+  width: 20vw;
+  min-width: 50vmin;
+}
+
+.about-wrapper {
+  display: flex;
+  margin: auto;
+  width: 60%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.me {
+  width: 40%;
+  margin: auto 0;
+  min-width: 40vmin;
+  padding: 8vmax 0;
+}
+.me img {
+  box-shadow: -3px 6px 28px 8px #00000038;
 }
 
 .page-header {
