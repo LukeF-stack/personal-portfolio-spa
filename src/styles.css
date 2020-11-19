@@ -859,4 +859,8 @@ button:focus {
   .bio {
     font-size: 14px;
   }
+  .social-btn img {
+    width: 18px;
+    height: fit-content;
+  }
 }
