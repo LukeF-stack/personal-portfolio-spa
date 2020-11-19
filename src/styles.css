@@ -128,6 +128,7 @@ button:focus {
   margin-right: 10vw;
   justify-content: space-between;
   width: 10vw;
+  min-width: 180px;
 }
 
 .social-btn img {
@@ -295,7 +296,8 @@ button:focus {
 .landing-column_2 h2 {
   color: white;
   /* text-align: center; */
-  margin: 20px auto;
+  margin: 30px auto;
+  font-size: calc(14px + 4 * ((100vw) / 680));
 }
 
 .column_2-container {
@@ -305,6 +307,7 @@ button:focus {
   width: 100%;
   /* padding-bottom: 10vh; */
   grid-row: 1;
+  transition: opacity ease 0.3s;
 }
 
 .landing-text-wrapper {
@@ -385,6 +388,8 @@ button:focus {
   width: 80%;
   margin: auto;
   display: flex;
+  box-shadow: -3px 6px 28px 8px #00000038;
+  border-radius: 3px;
 }
 
 .hero-container {
@@ -773,14 +778,25 @@ button:focus {
 
 @media screen and (max-width: 1024px) {
   .landing-section {
-    grid-template-columns: 100%;
-    grid-template-rows: 80px 2fr 3fr;
+    grid-template-columns: 1fr;
   }
-  .landing-text-wrapper {
-    grid-row: 2;
-    grid-row: 2;
-    padding: 0;
-    width: fit-content;
+
+  .column_2-container img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .landing-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 2fr 3fr;
+    min-height: fit-content;
+  }
+  .display-img-container {
+    grid-column: 1;
+    grid-row: 3;
+    /* padding: 10vmin; */
+    margin: auto;
   }
   .landing-column_2 {
     grid-row: 3;
@@ -790,29 +806,20 @@ button:focus {
   .column_2-container {
     grid-column: 2;
     padding: 0;
-    margin-top: 0;
+    /* margin-top: 0; */
   }
-  .column_2-container img {
-    width: 80%;
+  .landing-text-wrapper {
+    grid-row: 2;
+    grid-row: 2;
+    padding: 0;
+    width: fit-content;
+    text-align: center;
+    max-width: 70vw;
   }
   .next-btn {
     grid-column: 3;
-    margin: auto;
-    margin-top: 4em;
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .landing-section {
-    grid-template-columns: 1fr;
-    grid-template-rows: 80px 1fr 1fr;
-    height: fit-content;
-  }
-  .display-img-container {
-    grid-column: 1;
-    grid-row: 3;
-    /* padding: 10vmin; */
-    margin: auto;
+    grid-column: 3;
+    margin-top: 10vh;
+    margin-bottom: unset;
   }
 }

@@ -39,7 +39,10 @@ function homePageController() {
         project = Projects[i];
         project["index"] = i;
         console.log(project);
-        setProject(project);
+        document.querySelector(".column_2-container").style.opacity = 0;
+        setTimeout(() => {
+          setProject(project);
+        }, 500);
       });
       return;
     }
@@ -73,6 +76,9 @@ function homePageController() {
 
     const viewProjectBtn = document.querySelector(".view-project-btn");
     viewProjectBtn.href = `#${data.project_id}`;
+    setTimeout(() => {
+      document.querySelector(".column_2-container").style.opacity = 1;
+    }, 500);
   }
 }
 export { homePageController };

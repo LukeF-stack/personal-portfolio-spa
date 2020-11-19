@@ -3,7 +3,7 @@ const Projects = [
     title: "Car Rental Web Application",
     id: "car-rental",
     cover_img: "/images/car_rental_cover.png",
-    img: "/images/project_car-rental-spa.png",
+    img: "/images/car_rental_display.png",
     display_img: "/images/car_rental_display.png",
     subtitle: "Full-Stack, Vanilla JS Single Page Application",
     case_img_1: "/images/car_rental_case1.png",
@@ -23,7 +23,7 @@ const Projects = [
   {
     title: "Powder Japan - React Web Application",
     id: "powder-japan",
-    img: "/images/project_powder_japan.png",
+    img: "/images/powder_japan_display.png",
     display_img: "/images/powder_japan_display.png",
     subtitle: "Full-Stack, React JS Single Page Application",
     case_img_1: "/images/powder_japan_case1.png",
@@ -43,7 +43,7 @@ const Projects = [
   {
     title: "Ducati Motorcycles - Concept Website",
     id: "ducati-motorcycles",
-    img: "/images/project_ducati-website.png",
+    img: "/images/ducati_website_display.png",
     subtitle: "Static HTML, CSS & jQuery Website",
     icons: [
       { src: "/images/html-icon.svg" },
