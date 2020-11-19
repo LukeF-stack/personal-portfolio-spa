@@ -80,16 +80,30 @@ button:focus {
 .work-project-card {
   min-width: 60vmin;
   flex-grow: 1;
+  background-size: cover;
+  margin: 5px;
+  box-shadow: -3px 6px 18px 3px #00000045;
+  transition: all ease 0.3s;
 }
 
 .project-1 {
   background-image: url("/images/powder_japan_display.png");
 }
+.project-1:hover {
+  padding: 20px;
+}
 .project-2 {
-  background-image: url("/images/powder_japan_display.png");
+  background-image: url("/images/car_rental_display.png");
+  min-width: 40vmin;
+}
+.project-2:hover {
+  padding: 20px;
 }
 .project-3 {
-  background-image: url("/images/powder_japan_display.png");
+  background-image: url("/images/ducati_project_card.png");
+}
+.project-3:hover {
+  padding: 20px;
 }
 
 .work-grid {
