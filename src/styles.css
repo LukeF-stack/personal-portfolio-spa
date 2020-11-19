@@ -87,6 +87,10 @@ button:focus {
   overflow: hidden;
   position: relative;
 }
+.card-text-wrapper {
+  margin: auto;
+  text-align: center;
+}
 
 .card-caption {
   margin: auto;
@@ -95,7 +99,7 @@ button:focus {
   display: flex;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.719);
+  background: rgba(0, 0, 0, 0.801);
   transition: all ease 0.3s;
   visibility: hidden;
   opacity: 0;
@@ -105,9 +109,7 @@ button:focus {
   right: 0;
   left: 0;
 }
-.card-text-wrapper {
-  margin: auto;
-}
+
 .project-1 {
   background-image: url("/images/powder_japan_display.png");
 }
@@ -131,6 +133,7 @@ button:focus {
 }
 .project-3 {
   background-image: url("/images/ducati_project_card.png");
+  background-position: center;
 }
 .project-3:hover {
   padding: 10px;
