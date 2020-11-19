@@ -89,6 +89,7 @@ button:focus {
   grid-row: 1;
   cursor: pointer;
   transition: all ease 0.3s;
+  font-size: calc(18px + 1.5vmax);
 }
 
 .next-btn:hover {
@@ -828,5 +829,29 @@ button:focus {
   }
   .page-content-project {
     grid-template-rows: 80px auto 100vh calc(100vh - 80px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landing-column_2 h2 {
+    display: none;
+  }
+  .project-description-icons {
+    display: none;
+  }
+  #hero-project-subtitle {
+    display: none;
+  }
+  .landing-column_2 {
+    grid-template-columns: 1fr 75vw 1fr;
+  }
+  .column_2-container img {
+    width: 100%;
+  }
+  .next-btn {
+    margin: auto;
+  }
+  .socials {
+    display: none;
   }
 }
