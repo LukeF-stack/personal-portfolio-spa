@@ -262,7 +262,7 @@ button:focus {
 }
 
 .display-img-container img {
-  box-shadow: -3px 6px 28px 8px #00000081;
+  box-shadow: -3px 6px 28px 8px #0000004d;
   border-radius: 5px;
 }
 
@@ -368,6 +368,7 @@ button:focus {
   transition: all ease 0.3s;
   padding: 10px 0;
   display: block;
+  width: fit-content;
 }
 
 .live-link:hover {
