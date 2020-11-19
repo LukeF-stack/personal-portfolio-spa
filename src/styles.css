@@ -105,10 +105,9 @@ button:focus {
   right: 0;
   left: 0;
 }
-.card-caption h1 {
+.card-text-wrapper {
   margin: auto;
 }
-
 .project-1 {
   background-image: url("/images/powder_japan_display.png");
 }
