@@ -123,7 +123,7 @@ const App = {
 
     const behanceBtn = document.createElement("a");
     behanceBtn.classList.add("social-btn");
-    behanceBtn.href = "https://www.behance.com";
+    behanceBtn.href = "https://www.behance.com/lukefordham1";
     socialsDiv.appendChild(behanceBtn);
     const behanceIcon = document.createElement("img");
     behanceIcon.src = "/images/behance-icon.svg";
@@ -131,7 +131,7 @@ const App = {
 
     const dribbbleBtn = document.createElement("a");
     dribbbleBtn.classList.add("social-btn");
-    dribbbleBtn.href = "https://www.dribbble.com";
+    dribbbleBtn.href = "https://www.dribbble.com/lukefordham-design";
     socialsDiv.appendChild(dribbbleBtn);
     const dribbbleIcon = document.createElement("img");
     dribbbleIcon.src = "/images/dribbble-icon.svg";
@@ -139,19 +139,19 @@ const App = {
 
     const igBtn = document.createElement("a");
     igBtn.classList.add("social-btn");
-    igBtn.href = "https://www.instagram.com";
+    igBtn.href = "https://www.instagram.com/lukefordham.design";
     socialsDiv.appendChild(igBtn);
     const igIcon = document.createElement("img");
     igIcon.src = "/images/ig-icon.svg";
     igBtn.appendChild(igIcon);
 
-    const twitterBtn = document.createElement("a");
-    twitterBtn.classList.add("social-btn");
-    twitterBtn.href = "https://www.twitter.com";
-    socialsDiv.appendChild(twitterBtn);
-    const twitterIcon = document.createElement("img");
-    twitterIcon.src = "/images/twitter-icon.svg";
-    twitterBtn.appendChild(twitterIcon);
+    // const twitterBtn = document.createElement("a");
+    // twitterBtn.classList.add("social-btn");
+    // twitterBtn.href = "https://www.twitter.com";
+    // socialsDiv.appendChild(twitterBtn);
+    // const twitterIcon = document.createElement("img");
+    // twitterIcon.src = "/images/twitter-icon.svg";
+    // twitterBtn.appendChild(twitterIcon);
 
     App.refreshNav();
   },
@@ -191,7 +191,7 @@ const App = {
 
       const behanceBtn = document.createElement("a");
       behanceBtn.classList.add("social-btn", "social-dark");
-      behanceBtn.href = "https://www.behance.com";
+      behanceBtn.href = "https://www.behance.com/lukefordham1";
       socialsDiv.appendChild(behanceBtn);
       const behanceIcon = document.createElement("img");
       behanceIcon.src = "/images/behance-icon.svg";
@@ -199,7 +199,7 @@ const App = {
 
       const dribbbleBtn = document.createElement("a");
       dribbbleBtn.classList.add("social-btn", "social-dark");
-      dribbbleBtn.href = "https://www.dribbble.com";
+      dribbbleBtn.href = "https://www.dribbble.com/lukefordham-design";
       socialsDiv.appendChild(dribbbleBtn);
       const dribbbleIcon = document.createElement("img");
       dribbbleIcon.src = "/images/dribbble-icon.svg";
@@ -207,19 +207,19 @@ const App = {
 
       const igBtn = document.createElement("a");
       igBtn.classList.add("social-btn", "social-dark");
-      igBtn.href = "https://www.instagram.com";
+      igBtn.href = "https://www.instagram.com/lukefordham.design";
       socialsDiv.appendChild(igBtn);
       const igIcon = document.createElement("img");
       igIcon.src = "/images/ig-icon.svg";
       igBtn.appendChild(igIcon);
 
-      const twitterBtn = document.createElement("a");
-      twitterBtn.classList.add("social-btn", "social-dark");
-      twitterBtn.href = "https://www.twitter.com";
-      socialsDiv.appendChild(twitterBtn);
-      const twitterIcon = document.createElement("img");
-      twitterIcon.src = "/images/twitter-icon.svg";
-      twitterBtn.appendChild(twitterIcon);
+      // const twitterBtn = document.createElement("a");
+      // twitterBtn.classList.add("social-btn", "social-dark");
+      // twitterBtn.href = "https://www.twitter.com";
+      // socialsDiv.appendChild(twitterBtn);
+      // const twitterIcon = document.createElement("img");
+      // twitterIcon.src = "/images/twitter-icon.svg";
+      // twitterBtn.appendChild(twitterIcon);
     }
   },
 
