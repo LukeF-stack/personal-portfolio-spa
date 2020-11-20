@@ -49,7 +49,11 @@ const Projects = [
       { src: "/images/html-icon.svg" },
       { src: "/images/css-icon.svg" },
       { src: "/images/jquery-icon.svg" }
-    ]
+    ],
+    link: {
+      link: "https://ducati-motorcycles-concept.netlify.app",
+      link_title: "See live website here"
+    }
   }
 ];
 
