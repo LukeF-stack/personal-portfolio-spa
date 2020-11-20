@@ -9,7 +9,7 @@ const Projects = [
     case_img_1: "/images/car_rental_case1.png",
     case_img_2: "/images/car_rental_case2.png",
     link: {
-      link: "https://google.com",
+      link: "https://car-rentals.netlify.app",
       link_title: "See live website here"
     },
     description:
