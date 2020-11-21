@@ -490,8 +490,11 @@ button:focus {
 
 .hero-container {
   grid-template-columns: 1fr;
-  grid-template-rows: 80px calc(100vh - 80px) 100vh calc(100vh - 80px);
+  /* grid-template-rows: 80px calc(100vh - 80px) 100vh calc(100vh - 80px); */
+  grid-template-rows: 80px calc(100vh - 80px) auto calc(100vh - 80px);
   display: grid;
+  grid-row-start: 1;
+  grid-row-end: 5;
 }
 
 .hero-title {
@@ -658,16 +661,18 @@ button:focus {
   width: fit-content;
   position: absolute;
   z-index: 30;
-  margin: 20vh auto;
+  margin: 15vh auto;
   display: block;
   top: 0;
   /* bottom: 0; */
   left: 0;
   height: fit-content;
   right: 0;
-  font-size: calc(24px + 2 * ((100vw) / 680));
   color: white;
   font-weight: 600;
+}
+.contact-title h1 {
+  font-size: calc(24px + 9 * ((100vw) / 680));
 }
 
 /* book entry */
