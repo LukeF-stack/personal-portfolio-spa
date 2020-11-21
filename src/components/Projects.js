@@ -44,12 +44,17 @@ const Projects = [
     title: "Ducati Motorcycles - Concept Website",
     id: "ducati-motorcycles",
     img: "/images/ducati_website_display.png",
+    display_img: "/images/ducati_website_display.png",
     subtitle: "Static HTML, CSS & jQuery Website",
+    case_img_1: "/images/ducati_project_card.png",
+    case_img_2: "/images/ducati_motorcycles_case2.png",
     icons: [
       { src: "/images/html-icon.svg" },
       { src: "/images/css-icon.svg" },
       { src: "/images/jquery-icon.svg" }
     ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu risus dictum ut ut id porttitor vel aliquet. Magna viverra nunc egestas risus aliquam, volutpat sed ac, libero. Tincidunt proin pellentesque pretium enim, sollicitudin vulputate ultrices scelerisque facilisis. Purus sollicitudin elit malesuada porta facilisis egestas imperdiet. Mi lorem consectetur nibh velit. Facilisi sit massa sagittis, malesuada ornare feugiat donec. Gravida leo etiam tincidunt ultrices. Vulputate nisl, enim lorem arcu, nibh viverra varius. Morbi aliquam nulla tellus, arcu, mauris urna purus dapibus et. In lectus nec venenatis amet.",
     link: {
       link: "https://ducati-motorcycles-concept.netlify.app",
       link_title: "See live website here"

@@ -291,6 +291,14 @@ button:focus {
   background-size: cover;
   height: 100%;
 }
+.ducati-motorcycles-landing-background {
+  background-image: url(./images/ducati_project_card.png);
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  background-position: bottom;
+  filter: brightness(0.3);
+}
 
 .powder-japan-landing-background {
   background-image: url(./images/powder_japan_hero.png);
