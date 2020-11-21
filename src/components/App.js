@@ -19,12 +19,17 @@ const App = {
   init: () => {
     //Notify.init();
     //console.log("init");
+
     App.router();
     // listen for hash change and run App.router
     window.addEventListener("hashchange", App.router);
     /*Auth.check(() => {
 
     });*/
+    document.getElementById("app").classList.add("hidden");
+    setTimeout(() => {
+      document.getElementById("app").classList.remove("hidden");
+    }, 1000);
   },
 
   addRoute: (path, pageController) => {
@@ -227,7 +232,10 @@ const App = {
     if (document.querySelector(".contact-section")) {
       typeformEmbed.makeWidget(
         document.querySelector(".contact-section"),
-        "https://lukefordham01.typeform.com/to/VCWxNxsP"
+        "https://lukefordham01.typeform.com/to/VCWxNxsP",
+        {
+          opacity: 0
+        }
       );
     }
   }

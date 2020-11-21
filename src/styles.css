@@ -279,6 +279,7 @@ button:focus {
 
 .contact-wrapper {
   position: relative;
+  background: linear-gradient(0deg, rgb(163, 233, 243), rgb(66, 196, 210));
 }
 
 .home {

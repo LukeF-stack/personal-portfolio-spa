@@ -11,7 +11,13 @@ function homePageController() {
     project_title: null,
     project_subtitle: null,
     project_img: null,
-    project_icons: null
+    project_icons: null,
+    bio: `I am a passionate and driven developer, who loves to learn
+    new things and challenge myself.
+      To me, one of the greatest challenges and benefits of web development is the constantly
+      changing and evolving landscape. I hope that my future endeavours in the web development
+      industry allow me to learn new skills and find the most efficient and eloquent ways of
+      implementing design solutions`
     //secondaryContent: "This is secondary content."
   };
   //console.log("homepage");
