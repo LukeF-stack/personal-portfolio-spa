@@ -17,7 +17,7 @@ function homePageController() {
       To me, one of the greatest challenges and benefits of web development is the constantly
       changing and evolving landscape. I hope that my future endeavours in the web development
       industry allow me to learn new skills and find the most efficient and eloquent ways of
-      implementing design solutions`
+  implementing design solutions. Most importantly I'm a coffee addict, Treasure Planet enthusiast and I design my own tattoos`
     //secondaryContent: "This is secondary content."
   };
   //console.log("homepage");

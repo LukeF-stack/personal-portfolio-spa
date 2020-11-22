@@ -55,6 +55,44 @@ button:focus {
   outline: none;
 }
 
+.burger {
+  cursor: pointer;
+  padding: 5px;
+  margin: auto 5vw auto 0;
+  z-index: 20;
+  display: none;
+}
+
+.burger-line {
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  border-radius: 22%;
+  transition: all ease 0.3s;
+}
+.line-1 {
+  width: 18px;
+}
+.line-2 {
+  width: 25px;
+}
+.line-3 {
+  width: 22px;
+}
+
+.line-1.line-true {
+  width: 24px;
+  transform: rotate(-45deg) translateY(10px);
+}
+.line-2.line-true {
+  visibility: hidden;
+  width: 0;
+}
+.line-3.line-true {
+  width: 24px;
+  transform: rotate(45deg) translateY(-10px);
+}
+
 /* .hidden {
   opacity: 0;
   transition: all ease 0.5s;
@@ -1021,5 +1059,37 @@ button:focus {
   }
   .about-bio {
     padding: 10vmax 0 0 0;
+  }
+  .page-header #main-nav {
+    /* display: none; */
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    z-index: 30;
+    margin: 0;
+    background: linear-gradient(0deg, rgb(163, 233, 243), rgb(66, 196, 210));
+    opacity: 0;
+    transition: all ease 0.3s;
+  }
+  .page-header #main-nav.show {
+    visibility: visible;
+    /* display: flex; */
+    opacity: 1;
+    width: 100vw;
+    transition: all ease 0.3s;
+  }
+  .nav-links {
+    padding: 0;
+    flex-direction: column;
+    margin: auto;
+    display: flex;
+    height: 60vh;
+    z-index: 30;
+    justify-content: space-around;
+  }
+  .burger {
+    display: block;
+    z-index: 30;
   }
 }

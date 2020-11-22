@@ -8,7 +8,7 @@
 
 const App = {
   // properties
-  name: "Booklist App",
+  name: "Luke Fordham",
   version: "1.0.0",
   author: "Luke Fordham",
   rootEl: document.querySelector("#app"),
@@ -79,6 +79,7 @@ const App = {
       App.refreshNav();
       App.loadFooter();
       App.loadContact();
+      App.burgerListener();
       // run callback
       if (typeof callback === "function") {
         callback();
@@ -88,7 +89,7 @@ const App = {
 
   loadNav: () => {
     // get main nav div
-    let mainNav = document.querySelector("#main-nav");
+    let mainNav = document.querySelector(".nav-links");
     let logo = document.querySelector("#logo");
     const logoBtn = document.createElement("a");
     logoBtn.href = "#";
@@ -164,7 +165,7 @@ const App = {
   refreshNav: () => {
     // get current path
     let currentPath = window.location.hash || "#";
-    let navItems = document.querySelectorAll("#main-nav > a");
+    let navItems = document.querySelectorAll(".nav-links > a");
     navItems.forEach((navLink) => {
       if (navLink.getAttribute("href") === currentPath) {
         navLink.classList.add("active");
@@ -237,6 +238,19 @@ const App = {
           opacity: 0
         }
       );
+    }
+  },
+
+  burgerListener: () => {
+    const burger = document.querySelector(".burger");
+    if (burger) {
+      burger.addEventListener("click", () => {
+        const lines = document.getElementsByClassName("burger-line");
+        lines.forEach((line) => {
+          line.classList.toggle("line-true");
+        });
+        document.querySelector("#main-nav").classList.toggle("show");
+      });
     }
   }
 };
