@@ -42,6 +42,12 @@ footer {
   height: 80px;
 }
 
+.no-scroll {
+  position: absolute;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .credits {
   display: flex;
   margin: auto;

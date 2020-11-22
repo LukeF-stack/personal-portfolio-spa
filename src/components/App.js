@@ -250,6 +250,7 @@ const App = {
           line.classList.toggle("line-true");
         });
         document.querySelector("#main-nav").classList.toggle("show");
+        document.querySelector("#app").classList.toggle("no-scroll");
       });
     }
   }
