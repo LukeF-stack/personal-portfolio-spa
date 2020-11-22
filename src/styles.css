@@ -130,6 +130,7 @@ button:focus {
   transition: all ease 0.3s;
   overflow: hidden;
   position: relative;
+  background-position-x: center;
 }
 .card-text-wrapper {
   margin: auto;
@@ -1097,5 +1098,8 @@ button:focus {
   .burger {
     display: block;
     z-index: 30;
+  }
+  .live-link {
+    font-size: unset;
   }
 }
