@@ -117,6 +117,9 @@ const App = {
 
     const socialsDiv = document.createElement("div");
     socialsDiv.classList.add("socials");
+    socialsDiv.setAttribute("data-aos", "fade-right");
+    socialsDiv.setAttribute("data-aos-delay", "500");
+    socialsDiv.setAttribute("data-aos-duration", "500");
     App.rootEl.appendChild(socialsDiv);
 
     const linkedinBtn = document.createElement("a");
