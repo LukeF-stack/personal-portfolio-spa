@@ -80,8 +80,10 @@ function homePageController() {
       });
     }
 
-    const viewProjectBtn = document.querySelector(".view-project-btn");
-    viewProjectBtn.href = `#${data.project_id}`;
+    const viewProjectBtn = document.getElementsByClassName("view-project-btn");
+    viewProjectBtn.forEach((btn) => {
+      btn.href = `#${data.project_id}`;
+    });
     setTimeout(() => {
       document.querySelector(".column_2-container").style.opacity = 1;
     }, 800);
