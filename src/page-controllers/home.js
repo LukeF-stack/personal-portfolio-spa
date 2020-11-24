@@ -48,7 +48,7 @@ function homePageController() {
         document.querySelector(".column_2-container").style.opacity = 0;
         setTimeout(() => {
           setProject(project);
-        }, 500);
+        }, 800);
       });
       return;
     }
