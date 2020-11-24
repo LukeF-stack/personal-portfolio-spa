@@ -552,7 +552,8 @@ button:focus {
 .hero-container {
   grid-template-columns: 1fr;
   /* grid-template-rows: 80px calc(100vh - 80px) 100vh calc(100vh - 80px); */
-  grid-template-rows: 80px calc(100vh - 80px) auto calc(100vh - 80px);
+  /* grid-template-rows: 80px calc(100vh - 80px) auto calc(100vh - 80px); */
+  grid-template-rows: 80px auto auto calc(100vh - 80px);
   display: grid;
   grid-row-start: 1;
   grid-row-end: 6;
@@ -574,6 +575,7 @@ button:focus {
   grid-template-columns: 1fr; */
 
   background: linear-gradient(0deg, rgb(66, 196, 210), #67bbc6);
+  min-height: 100vh;
 }
 
 .about-bio {
@@ -1018,6 +1020,7 @@ button:focus {
     grid-column: 2;
     padding: 0;
     /* margin-top: 0; */
+    margin: 50px 0;
   }
   .landing-text-wrapper {
     grid-row: 2;
