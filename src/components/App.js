@@ -101,10 +101,12 @@ const App = {
     const homeBtn = document.createElement("a");
     homeBtn.href = "#";
     homeBtn.innerText = "Home";
+    homeBtn.classList.add("nav-link");
     mainNav.appendChild(homeBtn);
     const workBtn = document.createElement("a");
     workBtn.href = "#work";
     workBtn.innerText = "Work";
+    workBtn.classList.add("nav-link");
     mainNav.appendChild(workBtn);
     // const aboutBtn = document.createElement("a");
     // aboutBtn.href = "#about";
@@ -113,6 +115,7 @@ const App = {
     const contactBtn = document.createElement("a");
     contactBtn.href = "#contact";
     contactBtn.innerText = "Contact";
+    contactBtn.classList.add("nav-link");
     mainNav.appendChild(contactBtn);
 
     const socialsDiv = document.createElement("div");
@@ -154,13 +157,13 @@ const App = {
     igIcon.src = "/images/ig-icon.svg";
     igBtn.appendChild(igIcon);
 
-    // const twitterBtn = document.createElement("a");
-    // twitterBtn.classList.add("social-btn");
-    // twitterBtn.href = "https://www.twitter.com";
-    // socialsDiv.appendChild(twitterBtn);
-    // const twitterIcon = document.createElement("img");
-    // twitterIcon.src = "/images/twitter-icon.svg";
-    // twitterBtn.appendChild(twitterIcon);
+    //remove scroll lock
+    document.getElementsByClassName("nav-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        document.querySelector("#app").classList.remove("no-scroll");
+        document.querySelector("#main-nav").classList.remove("show");
+      });
+    });
 
     App.refreshNav();
   },
