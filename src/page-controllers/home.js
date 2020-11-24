@@ -21,7 +21,7 @@ function homePageController() {
     //secondaryContent: "This is secondary content."
   };
   //console.log("homepage");
-  App.loadPage("home", "template-page-home", data, () => {
+  App.loadPage("Luke Fordham", "template-page-home", data, () => {
     //console.log("home");
     Waves.init();
 

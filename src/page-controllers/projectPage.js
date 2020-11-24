@@ -10,7 +10,7 @@ function projectPageController() {
 
   //console.log("homepage");
   App.loadPage(
-    "about",
+    `${currentProject.title}`,
     `template-page-${currentProject.id}`,
     currentProject,
     () => {
