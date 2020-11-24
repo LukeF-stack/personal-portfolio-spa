@@ -1033,7 +1033,7 @@ button:focus {
     width: fit-content;
     text-align: center;
     max-width: 70vw;
-    margin: auto auto 50px;
+    margin: 10vh auto 50px;
   }
   .next-btn {
     grid-column: 3;
