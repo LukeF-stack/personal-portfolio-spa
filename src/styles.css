@@ -234,6 +234,7 @@ button:focus {
   flex-direction: column;
   height: 40vh;
   min-width: 20px;
+  min-height: 400px;
 }
 
 .socials:before,
