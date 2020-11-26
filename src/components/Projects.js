@@ -11,6 +11,14 @@ const Projects = [
       link: "https://powder-japan.netlify.app/",
       link_title: "See live website here"
     },
+    frontend_repo: {
+      link: "https://github.com/LukeF-stack/japan-powder-frontend",
+      link_title: "Front End project repository"
+    },
+    backend_repo: {
+      link: "https://github.com/LukeF-stack/japan-snow-backend",
+      link_title: "Back End project repository"
+    },
     description:
       "Powder Japan is a digital experience which helps users find out about snowboarding/skiing destinations in Japan. Its aim is to stimulate tourism in Japan, post COVID-19, through showcasing Japan's beautiful snow destinations.",
     technology_description:
@@ -33,6 +41,14 @@ const Projects = [
     link: {
       link: "https://car-rentals.netlify.app",
       link_title: "See live website here"
+    },
+    frontend_repo: {
+      link: "https://github.com/LukeF-stack/car-rentals-frontend",
+      link_title: "Front End project repository"
+    },
+    backend_repo: {
+      link: "https://github.com/LukeF-stack/car-rentals-backend",
+      link_title: "Back End project repository"
     },
     description:
       "Car Rentals is a concept project for a mock car rental company. The project allows users to filter through different rental cars by brand and 'book' cars, which adds their booking to the project database.",

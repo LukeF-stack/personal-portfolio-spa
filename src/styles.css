@@ -524,10 +524,18 @@ button:focus {
   background-color: #e68158;
   border-radius: 4px;
   box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.08);
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
-.live-link:hover {
+.repo-link {
+  display: block;
+  padding: 10px 0;
+  width: fit-content;
+  transition: padding ease 0.3s;
+}
+
+.live-link:hover,
+.repo-link:hover {
   padding-left: 30px;
 }
 
