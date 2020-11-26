@@ -48,6 +48,12 @@ footer {
   overflow: hidden;
 }
 
+.no-page-found {
+  grid-row: 2;
+  margin: 30vh 0;
+  text-align: center;
+}
+
 .credits {
   display: flex;
   margin: auto;
