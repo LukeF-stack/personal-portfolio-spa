@@ -578,6 +578,7 @@ button:focus {
   font-size: calc(24px + 9 * ((100vw) / 680));
   color: white;
   font-weight: 600;
+  line-height: 1.3em;
 }
 
 .bio-section {
